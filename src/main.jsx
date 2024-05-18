@@ -10,11 +10,8 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       domain="dev-q0h0gw3ao1j353ab.us.auth0.com"
       clientId="yZz0NMdZ7IJ35figaAcjNQfHPbBoMj1y"
       authorizationParams={{
-        redirect_uri: "https://estateflow.vercel.app/"
+        redirect_uri: window.location.origin
       }}
-      audience="https://estateflow-backend.vercel.app"
-      scope="openid profile email"
-    >
       <App />
     </Auth0Provider>
   </React.StrictMode>
